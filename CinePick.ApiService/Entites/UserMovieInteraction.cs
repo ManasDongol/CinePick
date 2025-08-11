@@ -1,0 +1,16 @@
+namespace CinePick.ApiService.Entites;
+
+public class UserMovieInteraction
+{
+    public string UserId { get; set; }
+    public ApplicationUsers ApplicationUser { get; set; }
+
+    public int MovieId { get; set; }
+    public Movies Movie { get; set; }
+
+    public double? Rating { get; set; } // 1 to 5 stars
+    public bool IsLiked { get; set; } = false;
+    public bool IsWatched { get; set; } = false;
+
+    public DateTime InteractionDate { get; set; } = DateTime.UtcNow;
+}

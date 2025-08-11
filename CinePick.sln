@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePick.AppHost", "CinePick.AppHost\CinePick.AppHost.csproj", "{471C3BF1-8073-4FFC-863A-C65489A8BC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePick.ServiceDefaults", "CinePick.ServiceDefaults\CinePick.ServiceDefaults.csproj", "{C616818A-77F3-41D2-9921-BE45BA18B47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePick.ApiService", "CinePick.ApiService\CinePick.ApiService.csproj", "{9611CFFD-EF18-4FB6-9AF1-41C8D37C0897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePick.Web", "CinePick.Web\CinePick.Web.csproj", "{0783FE75-C6EE-4105-ACE9-9819DFA47F1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{471C3BF1-8073-4FFC-863A-C65489A8BC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471C3BF1-8073-4FFC-863A-C65489A8BC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471C3BF1-8073-4FFC-863A-C65489A8BC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471C3BF1-8073-4FFC-863A-C65489A8BC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C616818A-77F3-41D2-9921-BE45BA18B47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C616818A-77F3-41D2-9921-BE45BA18B47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C616818A-77F3-41D2-9921-BE45BA18B47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C616818A-77F3-41D2-9921-BE45BA18B47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9611CFFD-EF18-4FB6-9AF1-41C8D37C0897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9611CFFD-EF18-4FB6-9AF1-41C8D37C0897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9611CFFD-EF18-4FB6-9AF1-41C8D37C0897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9611CFFD-EF18-4FB6-9AF1-41C8D37C0897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0783FE75-C6EE-4105-ACE9-9819DFA47F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0783FE75-C6EE-4105-ACE9-9819DFA47F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0783FE75-C6EE-4105-ACE9-9819DFA47F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0783FE75-C6EE-4105-ACE9-9819DFA47F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
