@@ -2,12 +2,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CinePick.ApiService.Entites;
 
-public class Genre
+public class Genres
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     [Required]
     public string Name { get; set; }
 
-    public ICollection<MovieGenres> MovieGenres { get; set; }
+    public ICollection<Genres> MovieGenres { get; set; }
 }

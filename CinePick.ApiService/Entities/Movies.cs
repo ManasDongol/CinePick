@@ -4,7 +4,7 @@ namespace CinePick.ApiService.Entites;
 
 public class Movies
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     [Required, MaxLength(255)]
     public string Title { get; set; }
@@ -12,7 +12,7 @@ public class Movies
     public string Description { get; set; }
     public DateTime ReleaseDate { get; set; }
 
-    public ICollection<MovieGenres> MovieGenres { get; set; }
+    public ICollection<Genres> Genres { get; set; }
     public ICollection<WatchList> Watchlists { get; set; }
     public ICollection<UserMovieInteraction> Interactions { get; set; }
     
