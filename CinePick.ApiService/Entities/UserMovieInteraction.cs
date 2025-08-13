@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CinePick.ApiService.Entites;
 
 public class UserMovieInteraction
 {
+    [Key]
     public Guid UserId { get; set; }
     public ApplicationUsers ApplicationUser { get; set; }
 

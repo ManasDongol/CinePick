@@ -4,6 +4,7 @@ namespace CinePick.ApiService.Entites;
 
 public class Genres
 {
+    [Key]
     public Guid Id { get; set; }
 
     [Required]

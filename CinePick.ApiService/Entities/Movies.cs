@@ -4,6 +4,7 @@ namespace CinePick.ApiService.Entites;
 
 public class Movies
 {
+    [Key]
     public Guid Id { get; set; }
 
     [Required, MaxLength(255)]
