@@ -1,29 +1,24 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">CinePick</a>
+﻿@using Microsoft.FluentUI.AspNetCore.Components
+@using Icons= Microsoft.FluentUI.AspNetCore.Components.Icons
+
+
+<FluentStack Orientation="Orientation.Horizontal" Width="100%">
+    <div>
+        <FluentNavMenu @bind-Expanded="@Expanded" Width="200" Collapsible="true" CollapsedChildNavigation="@EnableCollapsedChildNavigation" Title="Collapsible demo">
+            <FluentNavLink Icon="@(new Icons.Regular.Size24.MoviesAndTv())" Tooltip="Item 1 tooltip"><span style="color: #FFCD00FF">Movies</span></FluentNavLink>
+            <FluentNavLink  Tooltip="Item 3 tooltip" Icon="@(new Icons.Regular.Size24.Eye())" ><span style="color: #FFCD00FF">My Watchlist</span></FluentNavLink>
+        </FluentNavMenu>
     </div>
-</div>
+   
+</FluentStack>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler"/>
+@code
+{
+    bool Expanded = true;
+    bool EnableCollapsedChildNavigation = true;
+}
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill" aria-hidden="true"></span> Movies
-            </NavLink>
-        </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill" aria-hidden="true"></span>  Watchlist
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+@code {
+private bool expanded = true;
+}

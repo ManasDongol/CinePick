@@ -1,5 +1,6 @@
 using CinePick.Web;
 using CinePick.Web.Components;
+using Microsoft.FluentUI.AspNetCore.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddOutputCache();
 
-
+builder.Services.AddFluentUIComponents();
 
 var app = builder.Build();
 

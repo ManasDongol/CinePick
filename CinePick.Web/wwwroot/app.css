@@ -1,11 +1,15 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --neutral-foreground-rest: #ffffff; 
+    background: #0e0e0e;
 }
 
 a, .btn-link {
     color: #006bb7;
 }
-
+h1{
+    color: white;
+}
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -53,4 +57,23 @@ h1:focus {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
+}
+
+.navmenu{
+    display: flex;
+    flex-direction: column;
+}
+.sitenav{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1d20;
+}
+
+#main-menu{
+    display: flex;
+    flex-direction: column;
+    color: #ffc700;
+}
+.navbar-brand{
+    padding: 1rem 1rem;
 }

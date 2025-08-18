@@ -1,0 +1,44 @@
+@page "/register"
+@layout CustomLayout
+@using CinePick.Web.Components.Layout
+@using CinePick.ApiService.Controllers.Users.UserDto
+
+
+@rendermode InteractiveServer
+
+<link rel="stylesheet" href="layout-css/login.css">
+
+<FluentStack Class="login-container" Style="justify-content: center; align-items: center; height: 100vh; width: 100vw;">
+    <FluentCard Width="350px" Height="auto" Class="login-card">
+        <h3>Sign Up</h3>
+        
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" type="text" class="form-control" @bind="Username" />
+        </div>
+
+       
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control" @bind="Email" />
+        </div>
+
+  
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" class="form-control" @bind="Password" />
+        </div>
+        
+        <div class="form-group">
+            <label for="re-enter password">Password</label>
+            <input id="re-enter password" type="password" class="form-control" @bind="reEnteredPassword" />
+        </div>
+
+        <FluentButton Appearance="Appearance.Accent" @onclick="HandleSignUp">Sign Up</FluentButton>
+        
+        <div class="login-link" style="margin-top: 10px; text-align: center;">
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </FluentCard>
+</FluentStack>

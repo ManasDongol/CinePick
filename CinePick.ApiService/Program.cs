@@ -23,6 +23,7 @@ builder.Services.AddDbContext<CinePickDbContext>(options =>
 builder.Services.AddControllers();
 
 
+
 builder.Services.AddIdentityCore<ApplicationUsers>(options =>
     {
         options.User.RequireUniqueEmail = true;

@@ -1,0 +1,26 @@
+@using Microsoft.FluentUI.AspNetCore.Components
+@inherits LayoutComponentBase
+
+
+
+<FluentDesignTheme Mode="DesignThemeModes.Dark" OfficeColor="OfficeColor.PowerBI" />
+<FluentStack Orientation="Orientation.Vertical">
+    
+    <span style="display:block; color: #ffcd00; background-color: #1a1d20; font-family:'Bahnschrift';font-size:x-large;width: 100vw;margin: 0;padding: 10px;"><FluentIcon Value="@(new Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.Size24.TargetArrow())" /> CinePick</span>
+    <FluentStack Horizontal="true" Style="width:100%; height:100vh;">
+        <!-- Sidebar container -->
+        <div style="flex: 0 1 auto; transition: flex 0.3s;">
+            <NavMenu/>
+        </div>
+
+        <!-- Main content -->
+        <FluentStack Grow="1" Style="overflow:auto; padding:16px;">
+            @Body
+        </FluentStack>
+    </FluentStack>
+</FluentStack>
+
+
+@code {
+    
+}

@@ -29,5 +29,19 @@
       <jdbc-url>jdbc:postgresql://localhost:52918/CinePick-db?password=8tpVJgPVjgGaMpeBKdVa_m&amp;user=postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="cache" uuid="6d6afe08-518e-4b9d-8a7a-956ab82bb7dd">
+      <driver-ref>redis</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>jdbc.RedisDriver</jdbc-driver>
+      <jdbc-url>jdbc:redis://zhHnPut5T9cUHArCJcedKU@localhost:63270</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="CinePick-db" uuid="169347a8-3160-4b11-b5b9-18cc715899a5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:63272/CinePick-db?password=J3kpeQAH%2BbCsXGsGcXh%7DC%28&amp;user=postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
